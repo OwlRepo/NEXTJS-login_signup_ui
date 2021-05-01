@@ -1,10 +1,10 @@
 import { Flex, Heading } from "@chakra-ui/layout";
 import React from "react";
 
-export default function login() {
+export default function signup() {
   return (
     <Flex>
-      <Heading>LOGIN</Heading>
+      <Heading>SIGN UP</Heading>
     </Flex>
   );
 }

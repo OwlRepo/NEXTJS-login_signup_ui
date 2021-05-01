@@ -9,7 +9,7 @@ import SocialAccLogin from "./SocialAccLogin";
 
 export default function LoginForm() {
   return (
-    <Flex flex={1} flexDirection="column">
+    <Flex flex={1} flexDirection="column" alignItems="center">
       <VStack marginTop="10">
         <Heading>WELCOME!</Heading>
         <Text>Please sign in to continue...</Text>
@@ -39,14 +39,13 @@ export default function LoginForm() {
 const styleProps = {
   formCardContainer: {
     flexDirection: "column",
+    width: "25vw",
     shadow: "md",
-    padding: "10",
     borderRadius: "lg",
+    padding: "5",
   },
   formCardContainerWrapper: {
     marginTop: "10",
-    paddingRight: "24",
-    paddingLeft: "24",
     flexDirection: "column",
   },
 };

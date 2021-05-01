@@ -14,52 +14,23 @@ import styles from "../styles/Home.module.css";
 import SVGBanner from "../public/vrchat.svg";
 import { Image } from "next/image";
 import { Box } from "@chakra-ui/layout";
+import LoginForm from "../src/Components/Login/LoginForm";
+import Banner from "../src/Components/Login/Banner";
 export default function Home() {
   return (
     <Flex flexDirection="row">
-      <Flex flex={1} flexDirection="column" alignItems="center">
-        <SVGBanner />
+      <Banner />
 
-        <Box>
-          <Text>GET TOGETHER SAFELY WITH</Text>
-          <Heading fontSize="50">VIRTUAL REALITY</Heading>
-        </Box>
-      </Flex>
-
-      <Flex flex={1} flexDirection="column">
-        <VStack marginTop="10">
-          <Heading>WELCOME!</Heading>
-          <Text>Please sign in to continue...</Text>
-        </VStack>
-
-        <Flex
-          marginTop="10"
-          paddingRight="24"
-          paddingLeft="24"
-          flexDirection="column"
-        >
-          <Flex
-            flexDirection="column"
-            shadow="md"
-            padding="10"
-            borderRadius="lg"
-          >
-            <FormControl id="email">
-              <Input type="email" placeholder="Email" />
-            </FormControl>
-            <br />
-            <FormControl id="password">
-              <Input type="password" placeholder="Password" />
-            </FormControl>
-            <br />
-            <Button colorScheme="red" shadow="lg">
-              LOG IN
-            </Button>
-          </Flex>
-
-          <Flex flexDirection="row"></Flex>
-        </Flex>
-      </Flex>
+      <LoginForm />
     </Flex>
   );
 }
+
+const styleProps = {
+  formCardContainer: {
+    flexDirection: "column",
+    shadow: "md",
+    padding: "10",
+    borderRadius: "lg",
+  },
+};

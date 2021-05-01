@@ -23,7 +23,7 @@ export default function NavigationBar() {
           <Button variant="ghost">Pricing</Button>
         </Link>
         <Link href="/">
-          <Button variant="ghost">Log in</Button>
+          <Button variant="ghost">Login</Button>
         </Link>
         <Link href="/signup">
           <Button colorScheme="red">SIGN UP</Button>
